@@ -1,0 +1,83 @@
+/* Import the custom font */
+@font-face {
+    font-family: 'Suessfont';
+    src: url('../../components/Assets/Seuss-G4Ra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Apply Suessfont to specific elements */
+  .about-container h1,
+  .about-container h2,
+  .about-container p,
+  .about-container ul,
+  .about-container li {
+    font-family: 'Suessfont';
+  }
+  
+  /* Add styling for the container */
+  .about-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the headings */
+  .about-container h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #ff8000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+  
+  /* Style for paragraphs */
+  .about-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Style for the feature list */
+  .about-container ul {
+    margin-left: 30px;
+    padding-left: 10px;
+  }
+  
+  .about-container li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    position: relative;
+  }
+  
+  .about-container li:before {
+    content: '🌟'; /* Add a whimsical bullet point */
+    color: #ff8000;
+    position: absolute;
+    left: -20px;
+    top: 2px;
+    font-size: 24px;
+  }
+  
+  /* Add a touch of animation */
+  .about-container li:hover:before {
+    animation: bounce 0.5s infinite alternate;
+  }
+  
+  /* Animation keyframes */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Add more styling as needed */
+  
